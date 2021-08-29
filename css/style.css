@@ -16,17 +16,31 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+	--color-white: whitesmoke;
+	height: 100%;
+    width: 100%;
 }
 
 /*BODY*/
 	body{
-
+		width: 100%;
+		color: var(--color-white);
+		background-color: #00002e;
+		height: 100%;
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+		display: flex;
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		height: 22%;
+		display: flex;
+		text-align: center;
+		justify-content: flex-start;
+
 	}
 
 /*RODAPÉ*/
@@ -34,5 +48,167 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
-		
+		max-height: 90%;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        display: flex;
+}
+	
+	
+
+	body:nth-child(2){
+		justify-content: center;
 	}
+
+	section header{
+		justify-content: center;
+		display: flex;
+		font-size: 45px;
+	
+	}
+
+	section footer{
+		height: 25%;
+        align-items: flex-end;
+	}
+
+	
+
+	ul li{
+		justify-content: center;
+		box-sizing: border-box;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    width: 186px;
+		height: 186px;
+	}
+
+	ul li figure{
+	margin: 0;
+    display: flex;
+	}
+
+	.pg-home ul{
+	
+		justify-content: space-evenly;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		width: 858px;
+	}
+
+	section{
+
+		flex-grow: 1;
+		flex-direction: column;
+		display: flex;
+	}
+
+	ul li img{
+		display: flex;
+		padding: 0;
+		margin: 0;
+		max-width: 186px;
+		max-height: 186px;
+	}
+	
+	 li figure:hover {
+		 cursor: pointer;
+		border: solid var(--color-white) 2px;
+		transition-duration: 0.5s;
+	}
+
+	figure{
+		margin: 0;
+	}
+
+	figcaption{
+		opacity: 0;
+		width: 0;
+	}
+
+	.pg-home ul li .addPerfil{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0;
+    margin: 10;
+    justify-content: center;
+	}
+
+	.addPerfil figure{
+		padding: 39px 37.5px;
+	}
+
+	.addPerfil h3{
+	
+		align-items: stretch;
+		min-width: 186px;
+		flex-direction: row;
+	}
+
+     footer{
+		justify-content: center;
+		display: flex;
+		
+	 }
+
+	 footer button{
+		 border: solid var(--color-white) 1px;
+		 color: var(--color-white);
+		 background-color: #00002e;
+		 font-size: 20px;
+		 padding: 20px 40px;
+		 margin: 20px 10px;
+	 }
+
+	 footer button:hover{
+		cursor: pointer;
+		transition-duration: 1s;
+		border: solid var(--color-white) 2px;
+   
+	 }
+
+	 @media screen and (max-width: 768px){
+		 body{
+			height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+		 }
+
+		body .topo{
+			display: flex;
+			justify-content: center;
+		}
+
+		.pg-home{
+			display: flex;
+			justify-content: center
+		}
+
+		.pg-home ul{
+			align-content: center;
+			max-height: 700px;
+			flex-direction: column;
+			height: 100%;
+			flex-grow: 2;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.pg-home ul li{
+			margin: 0px 40px;
+			display: flex;
+			flex-basis: 50%;
+			flex-wrap: wrap;
+
+		}
+	 }
+
+	 
